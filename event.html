@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
+    <style>
+        body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #1e1e2d, #232335);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.event {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(33.33% - 1em); 
+    max-width: 400px;
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.event:hover {
+    transform: translateY(-5px);
+}
+
+.event img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.event-info {
+    padding: 1.5em;
+}
+
+.event-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.event-info p {
+    margin: 0.5em 0;
+}
+
+.event-link {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.event-link:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .events-container {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .event {
+        width: 100%; 
+        max-width: none; 
+        margin-bottom: 2em; 
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Upcoming Events</h1>
+    </header>
+    <main>
+        <div class="events-container">
+            <div class="event">
+                <img src="event1.jpg" alt="Event 1">
+                <div class="event-info">
+                    <h2>Event Title 1</h2>
+                    <p>Date: 2024</p>
+                    <p>Location: Main Hall</p>
+                    <p>To be updated</p>
+                    <a href="#" class="event-link">Learn More</a>
+                </div>
+            </div>
+            <div class="event">
+                <img src="event2.jpg" alt="Event 2">
+                <div class="event-info">
+                    <h2>Event Title 2</h2>
+                    <p>Date: 2024</p>
+                    <p>Location: Auditorium</p>
+                    <p>To be updated</p>
+                    <a href="#" class="event-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your College. All rights reserved.</p>
+    </footer>
+</body>
+</html>

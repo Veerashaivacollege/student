@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veerashaiva College Staff</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      overflow-x: hidden;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    .header {
+      padding: 20px 0;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: #2c3e50;
+    }
+    .department {
+      background: #fff;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateX(100%);
+      animation: slideInRight 2s forwards;
+    }
+    .department h2 {
+      font-size: 2em;
+      margin: 0 0 10px;
+      color: #e74c3c;
+      border-bottom: 2px solid #e74c3c;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .staff-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .staff-list li {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+    .staff-list img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    .staff-title {
+      font-weight: bold;
+      color: #34495e;
+    }
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Veerashaiva College Teaching Staff</h1>
+    </div>
+
+    <div class="department">
+      <h2>Kannada</h2>
+      <ul class="staff-list">
+        <li><img src="img/Dr_Shyamurthy_Kannada.jpg" alt="Dr. G Shyamurthy"><span class="staff-title">Dr. G Shyamurthy</span> - Asst. Professor</li>
+        <li><img src="path/to/dr_k_neelamma.jpg" alt="Dr. K Neelamma"><span class="staff-title">Dr. K Neelamma</span> - Lecturer</li>
+        <li><img src="path/to/dr_venkana_gouda.jpg" alt="Dr. Venkana Gouda"><span class="staff-title">Dr. Venkana Gouda</span> - Lecturer</li>
+        <li><img src="path/to/smt_brahmaramba_yati.jpg" alt="Smt. Brahmaramba Yati"><span class="staff-title">Smt. Brahmaramba Yati</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>English</h2>
+      <ul class="staff-list">
+        <li><img src="img/Dr_Sharanagouda_English.jpg" alt="Dr. Sharana Gouda"><span class="staff-title">Dr. Sharana Gouda</span> - Asst. Professor</li>
+        <li><img src="path/to/sri_sharnas_vali.jpg" alt="Sri Sharnas Vali"><span class="staff-title">Sri Sharnas Vali</span> - Lecturer</li>
+        <li><img src="path/to/smt_d_lakshmidevamma.jpg" alt="Smt. D Lakshmidevamma"><span class="staff-title">Smt. D Lakshmidevamma</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>Hindi</h2>
+      <ul class="staff-list">
+        <li><img src="path/to/smt_shobha_satyam.jpg" alt="Smt. Shobha Satyam"><span class="staff-title">Smt. Shobha Satyam</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>History</h2>
+      <ul class="staff-list">
+        <li><img src="path/to/sri_rudra_gouda.jpg" alt="Sri Rudra Gouda.T"><span class="staff-title">Sri Rudra Gouda.T</span> - Lecturer</li>
+        <li><img src="path/to/sri_praveen_kumar.jpg" alt="Sri Praveen Kumar.R"><span class="staff-title">Sri Praveen Kumar.R</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>Economics</h2>
+      <ul class="staff-list">
+        <li><img src="Rajashree_Patil_Economics.png" alt="Smt. Rajashree Patil"><span class="staff-title">Smt. Rajashree Patil</span> - Asst. Professor</li>
+        <li><img src="path/to/sri_gangadeep.jpg" alt="Sri Gangadeep.R"><span class="staff-title">Sri Gangadeep.R</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>Political Science</h2>
+      <ul class="staff-list">
+        <li><img src="path/to/sri_lingappa.jpg" alt="Sri Lingappa.K"><span class="staff-title">Sri Lingappa.K</span> - Lecturer</li>
+        <li><img src="path/to/kum_mahalingamma.jpg" alt="Kum. Mahalingamma"><span class="staff-title">Kum. Mahalingamma</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>Sociology</h2>
+      <ul class="staff-list">
+        <li><img src="path/to/smt_shailaja_reddy.jpg" alt="Smt. Shailaja Reddy"><span class="staff-title">Smt. Shailaja Reddy</span> - Lecturer</li>
+        <li><img src="path/to/sri_shekharapra.jpg" alt="Sri Shekharapra.T.P"><span class="staff-title">Sri Shekharapra.T.P</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>Physics</h2>
+      <ul class="staff-list">
+        <li><img src="path/to/kum_gangothri.jpg" alt="Kum. Gangothri.K"><span class="staff-title">Kum. Gangothri.K</span> - Lecturer</li>
+        <li><img src="path/to/kum_santhoshi.jpg" alt="Kum. Santhoshi.K"><span class="staff-title">Kum. Santhoshi.K</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>Chemistry</h2>
+      <ul class="staff-list">
+        <li><img src="img/ravi_Chemistry.jpg" alt="Dr. Ravikumar Naik.TR"><span class="staff-title">Dr. Ravikumar Naik.TR</span> - Asst. Professor</li>
+        <li><img src="img/Vindod_chemistry.jpg" alt="Dr. Vinod Kumar"><span class="staff-title">Dr. Vinod Kumar</span> - Asst. Professor</li>
+        <li><img src="path/to/mr_shivraja.jpg" alt="Mr. Shivraja.J"><span class="staff-title">Mr. Shivraja.J</span> - Lecturer</li>
+        <li><img src="path/to/dr_veeresh_sajjan.jpg" alt="Dr. Veeresh A Sajjan"><span class="staff-title">Dr. Veeresh A Sajjan</span> - Lecturer</li>
+        <li><img src="path/to/kum_archana.jpg" alt="Kum. Archana KM"><span class="staff-title">Kum. Archana KM</span> - Lecturer</li>
+        <li><img src="path/to/mr_bharathi.jpg" alt="Mr. Bharathi SB"><span class="staff-title">Dr. Bharathi SB</span> - Lecturer</li>
+        <li><img src="path/to/dr_shalini.jpg" alt="Dr. Shalini DV"><span class="staff-title">smt. Shalini DV</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>Botany</h2>
+      <ul class="staff-list">
+        <li><img src="img/Sharanabasava_Botony.jpg" alt=""><span class="staff-title">Sri Sharanabasa</span> - Asst. Professor</li>
+        <li><img src="img/rekha-shree.jpg" alt="Kum. Rekha Shree.S"><span class="staff-title">Kum. Rekha Shree.S</span> - Lecturer</li>
+        <li><img src="path/to/kum_doddabassamma.jpg" alt="Kum. Doddabassamma.V"><span class="staff-title">Kum. Doddabassamma.V</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>Zoology</h2>
+      <ul class="staff-list">
+        <li><img src="img/principal.jpg" alt="Dr. G Manohar"><span class="staff-title">Dr. G Manohar</span> - Associate Professor</li>
+        <li><img src="img/G_Mallana_Goud_Zoolody.jpg" alt="Sri G Mallangoud"><span class="staff-title">Sri G Mallangoud</span> - Lecturer</li>
+        <li><img src="path/to/kum_anjali.jpg" alt="Dr Zareena Banu"><span class="staff-title">Dr Zareena Banu</span> - Lecturer</li>
+        <li><img src="path/to/kum_pratyusha.jpg" alt="Kum. Pratyusha.K"> <span class="staff-title">Kum. Pratyusha.K</span> - Lecturer</li>
+        <li><img src="path/to/k_manjunatha.jpg" alt="Kum. Srii Vidya.M"><span class="staff-title">Kum. Srii Vidya.M</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>Mathematics</h2>
+      <ul class="staff-list">
+        <li><img src="path/to/kum_bhagyalakshmi.jpg" alt="Dr Shruthi.R"><span class="staff-title">Dr Shruthi.R</span> - Lecturer</li>
+        <li><img src="path/to/kum_shobharani.jpg" alt="Kum.Sangeetha K"><span class="staff-title">Kum.Sangeetha K</span> - Lecturer</li>
+        <li><img src="path/to/kum_bhagyalakshmi.jpg" alt="Sri Narasing Jyothinath"><span class="staff-title">Sri Narasing Jyothinath</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>Bio-Technology</h2>
+      <ul class="staff-list">
+        <li><img src="path/to/smt_k_anuradha.jpg" alt="Smt. K Anuradha"><span class="staff-title">Smt. K Anuradha</span> - Lecturer</li>
+        <li><img src="path/to/kum_brunda.jpg" alt="Kum. Brunda CJ"><span class="staff-title">Kum. Brunda CJ</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>Computer Science</h2>
+      <ul class="staff-list">
+        <li><img src="img/shoba.jpg" alt="Smt. Shobha Y"><span class="staff-title">Smt. Shobha Y</span> - Lecturer</li>
+        <li><img src="img/nikhil.jpg" alt="Sri Nikhil Kumar YS"><span class="staff-title">Sri Nikhil Kumar YS</span> - Lecturer</li>
+        <li><img src="path/to/kum_veena.jpg" alt="Kum. Veena G"><span class="staff-title">Kum. Veena G</span> - Lecturer</li>
+        <li><img src="img/rekha.jpg" alt="Kum. Rekha N"><span class="staff-title">Kum. Rekha N</span> - Lecturer</li>
+        <li><img src="img/rangamma.jpg" alt="Smt. Rangamma.S"><span class="staff-title">Smt. Rangamma.S</span> - Lecturer</li>
+        <li><img src="img/kavya-mam.jpg" alt="Smt. Kavyas KS"><span class="staff-title">Smt. Kavyas KS</span> - Lecturer</li>
+        <li><img src="img/Deepa-mam.jpg" alt="Smt. Deepa HM"><span class="staff-title">Smt. Deepa HAM</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>Commerce & Management</h2>
+      <ul class="staff-list">
+        <li><img src="img/ahsok-omkar_commerce.png" alt="Sri Ashok Omakar"><span class="staff-title">Sri Ashok Omakar</span> - Asst. Professor</li>
+        <li><img src="path/to/smt_mala.jpg" alt="Smt. Mala.K"><span class="staff-title">Smt. Mala.K</span> - Lecturer</li>
+        <li><img src="path/to/sri_prashanth.jpg" alt="Sri Suresh N"><span class="staff-title">Sri Suresh N</span> - Lecturer</li>
+        <li><img src="path/to/sri_suresh.jpg" alt="Sri Shivakumar Angadi"><span class="staff-title">Sri Shivakumar Angadi</span> - Lecturer</li>
+        <li><img src="path/to/smt_kavitha.jpg" alt="Smt. Kavitha S"><span class="staff-title">Smt. Kavitha S</span> - Lecturer</li>
+        <li><img src="path/to/sri_tameed.jpg" alt="Sri Nikhil B"><span class="staff-title">Sri Nikhil B</span> - Lecturer</li>
+        <li><img src="path/to/sri_vijay.jpg" alt="Sri Suresh s"><span class="staff-title">Sri Suresh S</span> - Lecturer</li>
+        <li><img src="path/to/sri_vijay.jpg" alt="Sri Vijay S Swarna"><span class="staff-title">Sri Vijay swarna</span> - Lecturer</li>
+      </ul>
+    </div>
+
+    <div class="department">
+      <h2>Physical Education and Sports</h2>
+      <ul class="staff-list">
+        <li><img src="img/Dr_Kavitha_M_VBC.jpg" alt="Dr. Kavitha Sangana Gouda.M"><span class="staff-title">Dr. Kavitha Sangana Gouda.M</span> - Physical Education Director</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
